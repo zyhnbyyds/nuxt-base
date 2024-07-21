@@ -8,6 +8,7 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
     '@vite-pwa/nuxt',
     '@nuxt/devtools',
+    'nuxt-mongoose',
   ],
 
   experimental: {
@@ -35,6 +36,10 @@ export default defineNuxtConfig({
       routes: ['/'],
       ignore: ['/hi'],
     },
+  },
+
+  mongoose: {
+    uri: 'mongodb://localhost:27017/test',
   },
 
   pwa,
