@@ -11,6 +11,12 @@ export default defineNuxtConfig({
     'nuxt-mongoose',
   ],
 
+  routeRules: {
+    '/*': {
+      cors: true,
+    },
+  },
+
   experimental: {
     payloadExtraction: false,
     renderJsonPayloads: true,
@@ -47,4 +53,6 @@ export default defineNuxtConfig({
   devtools: {
     enabled: true,
   },
+
+  compatibilityDate: '2025-02-26',
 })
