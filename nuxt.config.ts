@@ -10,7 +10,7 @@ export default defineNuxtConfig({
     '@nuxt/devtools',
     'nuxt-mongoose',
   ],
-
+  ssr: false,
   routeRules: {
     '/*': {
       cors: true,
@@ -51,7 +51,7 @@ export default defineNuxtConfig({
   pwa,
 
   devtools: {
-    enabled: true,
+    enabled: false,
   },
 
   compatibilityDate: '2025-02-26',
