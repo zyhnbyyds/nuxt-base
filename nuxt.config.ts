@@ -10,7 +10,7 @@ export default defineNuxtConfig({
     '@nuxt/devtools',
     'nuxt-mongoose',
   ],
-  ssr: false,
+  ssr: true,
   routeRules: {
     '/*': {
       cors: true,
