@@ -1,31 +1,12 @@
-import { pwa } from './config/pwa'
-
 export default defineNuxtConfig({
   modules: [
     '@vueuse/nuxt',
     '@unocss/nuxt',
     '@pinia/nuxt',
     '@nuxtjs/color-mode',
-    '@vite-pwa/nuxt',
     '@nuxt/devtools',
-    'nuxt-mongoose',
   ],
   ssr: true,
-  routeRules: {
-    '/*': {
-      cors: true,
-    },
-  },
-
-  experimental: {
-    payloadExtraction: false,
-    renderJsonPayloads: true,
-    typedPages: true,
-  },
-
-  css: [
-    '@unocss/reset/tailwind.css',
-  ],
 
   colorMode: {
     classSuffix: '',
@@ -37,22 +18,11 @@ export default defineNuxtConfig({
         target: 'esnext',
       },
     },
-    prerender: {
-      crawlLinks: false,
-      routes: ['/'],
-      ignore: ['/hi'],
-    },
   },
-
-  mongoose: {
-    uri: 'mongodb://localhost:27017/test',
-  },
-
-  pwa,
 
   devtools: {
-    enabled: false,
+    enabled: true,
   },
 
-  compatibilityDate: '2025-02-26',
+  compatibilityDate: '2025-08-31',
 })
