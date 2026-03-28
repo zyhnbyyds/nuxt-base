@@ -1,11 +1,8 @@
-<script lang='tsx' setup>
-import { Calender } from 'vue-boom'
-import 'vue-boom/dist/index.css'
-</script>
+<script lang="tsx" setup></script>
 
 <template>
-  <div h-screen w-screen>
-    <Calender />
+  <div h-screen w-screen dark:bg-dark-300 dark:text-white class="w-full h-full">
+    1
   </div>
 </template>
 

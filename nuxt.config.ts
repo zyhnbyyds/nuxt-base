@@ -1,11 +1,5 @@
 export default defineNuxtConfig({
-  modules: [
-    '@vueuse/nuxt',
-    '@unocss/nuxt',
-    '@pinia/nuxt',
-    '@nuxtjs/color-mode',
-    '@nuxt/devtools',
-  ],
+  modules: ['@vueuse/nuxt', '@unocss/nuxt', '@pinia/nuxt', '@nuxtjs/color-mode', '@nuxt/devtools'],
   ssr: true,
 
   colorMode: {
@@ -23,6 +17,4 @@ export default defineNuxtConfig({
   devtools: {
     enabled: true,
   },
-
-  compatibilityDate: '2025-08-31',
 })

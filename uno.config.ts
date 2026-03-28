@@ -10,13 +10,12 @@ import {
 } from 'unocss'
 
 export default defineConfig({
-  shortcuts: [
-  ],
+  shortcuts: [],
   presets: [
     presetWind4({
       preflights: {
-        reset: true
-      }
+        reset: true,
+      },
     }),
     presetAttributify(),
     presetIcons({
@@ -31,8 +30,5 @@ export default defineConfig({
       },
     }),
   ],
-  transformers: [
-    transformerDirectives(),
-    transformerVariantGroup(),
-  ],
+  transformers: [transformerDirectives(), transformerVariantGroup()],
 })
